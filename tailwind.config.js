@@ -4,6 +4,10 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Montserrat', 'sans-serif']
+      },
+      colors: {
+        'primaryColor': '#2dd4bf',
+        'secondaryColor': '#0c4a6e'
       }
     },
   },
