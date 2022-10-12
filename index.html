@@ -18,15 +18,22 @@
 
         <!-- logo -->
         <a href="#" class="text-2xl font-bold">Wonder Tour</a>
-        <div class="hidden space-x-16 lg:flex">
+        <div class="hidden space-x-10 lg:flex">
           <div class="flex items-center text-sm font-medium">
+
+            <!-- contact info -->
             <a href="#" class="flex items-center space-x-3 duration-100 hover:text-primaryColor">
-              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="#2dd4bf" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m15 16l-2.414-2.414A2 2 0 0 1 12 12.172V6"/></g></svg>
-              <span>09:00AM - 05:00PM</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.1rem" height="1.1rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="#2dd4bf" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414L.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/></svg>
+              <span>stefan.mohenski@gmail.com</span>
             </a>
             <div class="w-[1px] h-[30px] bg-gray-300 mx-5"></div>
             <a href="#" class="flex items-center space-x-3 duration-100 hover:text-primaryColor">
-              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="#2dd4bf" d="m20.33 21.48l2.24-2.24a2.19 2.19 0 0 1 2.34-.48l2.73 1.09a2.18 2.18 0 0 1 1.36 2v5A2.17 2.17 0 0 1 26.72 29C7.59 27.81 3.73 11.61 3 5.41A2.17 2.17 0 0 1 5.17 3H10a2.16 2.16 0 0 1 2 1.36l1.09 2.73a2.16 2.16 0 0 1-.47 2.34l-2.24 2.24s1.29 8.73 9.95 9.81Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.1rem" height="1.1rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="#2dd4bf" d="m20.33 21.48l2.24-2.24a2.19 2.19 0 0 1 2.34-.48l2.73 1.09a2.18 2.18 0 0 1 1.36 2v5A2.17 2.17 0 0 1 26.72 29C7.59 27.81 3.73 11.61 3 5.41A2.17 2.17 0 0 1 5.17 3H10a2.16 2.16 0 0 1 2 1.36l1.09 2.73a2.16 2.16 0 0 1-.47 2.34l-2.24 2.24s1.29 8.73 9.95 9.81Z"/></svg>
+              <span>+381691990165</span>
+            </a>
+            <div class="w-[1px] h-[30px] bg-gray-300 mx-5"></div>
+            <a href="#" class="flex items-center space-x-3 duration-100 hover:text-primaryColor">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.1rem" height="1.1rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="#2dd4bf" d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448s448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372s372 166.6 372 372s-166.6 372-372 372z"/><path fill="#2dd4bf" d="M686.7 638.6L544.1 535.5V288c0-4.4-3.6-8-8-8H488c-4.4 0-8 3.6-8 8v275.4c0 2.6 1.2 5 3.3 6.5l165.4 120.6c3.6 2.6 8.6 1.8 11.2-1.7l28.6-39c2.6-3.7 1.8-8.7-1.8-11.2z"/></svg>
               <span>09:00AM - 05:00PM</span>
             </a>
           </div>
@@ -69,11 +76,15 @@
     </nav>
 
     <!-- hero section -->
-    <section style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/assets/hero-img.jpg')" class="bg-cover bg-center bg-no-repeat">
+    <section class="relative">
+      <video autoplay muted loop id="myVideo" class="absolute -z-10 w-full h-full object-cover">
+        <source src="assets/hero-video.mp4" type="video/mp4">
+      </video>
+      <div class="absolute inset-0 bg-sky-500/50 -z-10"></div>
       <div class="section-container flex items-center justify-start h-screen text-white">
         <div>
-          <h2 class="max-w-[250px] font-medium mb-2 text-sm uppercase lg:max-w-full">enjoy the best destinations with our travel agency</h2>
-          <h1 class="text-4xl lg:text-6xl mb-6">Explore <span class="font-bold">The World</span></h1>
+          <h1 class="text-4xl mb-4 font-bold lg:text-6xl">Explore <span class="text-primaryColor">The World</span></h1>
+          <h2 class="font-medium mb-6 text-xl lg:text-2xl lg:max-w-full">Enjoy the best destinations with our travel agency</h2>
           <div class="relative max-w-md">
             <input type="text" placeholder="Search Destinations" class="py-3 px-5 bg-white w-full  text-black outline-0">
             <svg class="absolute right-2 top-3" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#000" d="M9.5 4a6.5 6.5 0 0 1 4.932 10.734l5.644 5.644l-.707.707l-5.645-5.645A6.5 6.5 0 1 1 9.5 4Zm0 1a5.5 5.5 0 1 0 0 11a5.5 5.5 0 0 0 0-11Z"/></svg>
@@ -114,7 +125,7 @@
     <!-- why choose us/counter -->
     <section class="py-28">
       <div class="section-container grid md:grid-cols-2 xl:grid-cols-4 gap-5">
-        <div class="flex flex-col items-center text-center">
+        <div class="flex flex-col items-center text-center max-w-[330px] w-full mx-auto">
           <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="3rem" height="3rem" viewBox="0 0 512.000000 512.000000"
  preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#2dd4bf" stroke="#2dd4bf">
@@ -185,7 +196,7 @@ c41 -130 75 -217 90 -235 l23 -27 252 -5 251 -5 -191 -139 c-200 -145 -230
           <h1 class="my-3 font-semibold text-lg">20+ Years of Experience</h1>
           <p>We offer a wide variety of personally picked tours with destinations all over the globe.</p>
         </div>
-        <div class="flex flex-col items-center text-center">
+        <div class="flex flex-col items-center text-center max-w-[330px] w-full mx-auto">
           <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="3rem" height="3rem" viewBox="0 0 512.000000 512.000000"
  preserveAspectRatio="xMidYMid meet">
@@ -254,7 +265,7 @@ c132 31 287 63 307 64 19 1 31 -9 53 -43z m-993 -991 l0 -695 -216 0 -216 0 4
           <h1 class="my-3 font-semibold text-lg">10000+ Happy Travelers</h1>
           <p>We offer a wide variety of personally picked tours with destinations all over the globe.</p>
         </div>
-        <div class="flex flex-col items-center text-center">
+        <div class="flex flex-col items-center text-center max-w-[330px] w-full mx-auto">
           <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="3rem" height="3rem" viewBox="0 0 512.000000 512.000000"
  preserveAspectRatio="xMidYMid meet">
@@ -306,7 +317,7 @@ m-3966 -1126 l0 -520 -240 0 -240 0 0 520 0 520 240 0 240 0 0 -520z"/>
           <h1 class="my-3 font-semibold text-lg">100% Trusted Agency</h1>
           <p>We offer a wide variety of personally picked tours with destinations all over the globe.</p>
         </div>
-        <div class="flex flex-col items-center text-center">
+        <div class="flex flex-col items-center text-center max-w-[330px] w-full mx-auto">
           <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="3rem" height="3rem" viewBox="0 0 512.000000 512.000000"
  preserveAspectRatio="xMidYMid meet">
