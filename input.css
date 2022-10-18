@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+
+    /* buttons */
     .btn {
-        @apply inline-block border-2 font-semibold capitalize duration-100;
+        @apply px-6 py-3 inline-block border-2 font-semibold capitalize duration-100;
     }
     .btn-primary {
         @apply bg-teal-400 text-white border-teal-400 hover:bg-transparent hover:text-primaryColor;
@@ -21,6 +23,8 @@
     .btn-sm {
         @apply p-3 text-sm;
     }
+
+    /* container */
     .section-container {
         @apply max-w-7xl mx-auto px-4;
     }
