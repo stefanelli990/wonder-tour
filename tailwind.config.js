@@ -6,10 +6,15 @@ module.exports = {
         'sans': ['Montserrat', 'sans-serif']
       },
       colors: {
-        'primaryColor': '#2dd4bf',
-        'primaryColorLight': '#5eead4',
-        'primaryColorDark': '#14b8a6',
-        'secondaryColor': '#0c4a6e'
+        'primary-color': {
+            'light': '#5eead4',
+            DEFAULT: '#2dd4bf',
+            'dark': '#14b8a6'
+        },
+        'secondary-color': {
+          DEFAULT: '#0c4a6e',
+          '100': '#0a3a56'
+        }
       }
     },
   },
